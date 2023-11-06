@@ -1,0 +1,40 @@
+{
+  "name": "social",
+  "version": "1.0.0",
+  "description": "social network for developers",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "bootstrap": "^4.5.0",
+    "classnames": "^2.2.6",
+    "concurrently": "^5.0.0",
+    "cors": "^2.8.5",
+    "express": "^5.0.0-alpha.6",
+    "express-async-handler": "^1.2.0",
+    "gravatar": "^1.8.0",
+    "json2csv": "^6.0.0-alpha.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.6.9",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.5",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "pdf-lib": "^1.17.1",
+    "socket.io": "^4.7.2",
+    "validator": "^10.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
