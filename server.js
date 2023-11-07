@@ -10,9 +10,9 @@ const morgan = require('morgan')
 const cors = require('cors')
 
 const users = require('./routes/api/users');
-const profile = require('./routes/api/profile');
-const posts = require('./routes/api/posts');
-const Notification = require('./routes/api/Notification');
+// const profile = require('./routes/api/profile');
+// const posts = require('./routes/api/posts');
+// const Notification = require('./routes/api/Notification');
 
 const fs = require('fs');
 // const sharp = require('sharp');
@@ -279,16 +279,16 @@ mongoose
   .catch(err => console.log(err));
 
 //Passport middleware
-app.use(passport.initialize());
+// app.use(passport.initialize());
 
 //Passport Config
 require('./config/passport')(passport);
 
 // Use Routes
 app.use('/api/users', users);
-app.use('/api/profile', profile);
-app.use('/api/posts', posts);
-app.use('/api/notifications', Notification);
+// app.use('/api/profile', profile);
+// app.use('/api/posts', posts);
+// app.use('/api/notifications', Notification);
 
 app.use(express.static('client/build'))
 
