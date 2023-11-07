@@ -274,7 +274,7 @@ chatServer.listen(port1, () => {
 //Connect to MongoDB
 const db = require('./config/keys').mongoURI
 mongoose
-  .connect(db)
+  .connect("mongodb+srv://wasi:tiger9999@cluster0.d18e063.mongodb.net/my_db")
   .then(() => console.log('MongoDB Connected'))
   .catch(err => console.log(err));
 
