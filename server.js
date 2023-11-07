@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const Note = require("./models/Notification");
 
 
-const passport = require('passport');
+// const passport = require('passport');
 const path = require('path')
 const morgan = require('morgan')
 const cors = require('cors')
@@ -282,7 +282,7 @@ mongoose
 // app.use(passport.initialize());
 
 //Passport Config
-require('./config/passport')(passport);
+// require('./config/passport')(passport);
 
 // Use Routes
 app.use('/api/users', users);
